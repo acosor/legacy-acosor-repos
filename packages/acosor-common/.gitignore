@@ -1,7 +1,9 @@
 # Folders
 /.nyc_output
 /node_modules
-/lib
 /typings
+/common
 
 # Files
+/index.js
+/index.js.map
