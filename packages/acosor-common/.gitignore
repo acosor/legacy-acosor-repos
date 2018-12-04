@@ -3,7 +3,14 @@
 /node_modules
 /typings
 /common
+/payloads
 
 # Files
+/Actions.js
+/Actions.js.map
+/IActions.js
+/IActions.js.map
 /index.js
 /index.js.map
+/ModularNames.js
+/ModularNames.js.map

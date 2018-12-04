@@ -1,6 +1,6 @@
-import IAction from "./IAction";
+import IActions from "./IActions";
 
-const Action: IAction = {
+const Actions: IActions = {
   core: {
     initialize: (modular, channel, payload, meta) => ({
       modular,
@@ -11,4 +11,4 @@ const Action: IAction = {
   },
 };
 
-export default Action;
+export default Actions;

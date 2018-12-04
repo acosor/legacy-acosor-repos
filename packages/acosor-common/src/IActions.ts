@@ -1,10 +1,10 @@
 import IActionCreator from "./common/IActionCreator";
 import IInitializePayload from "./payloads/IInitializePayload";
 
-interface IAction {
+interface IActions {
   core: {
     initialize: IActionCreator<IInitializePayload>;
   };
 }
 
-export default IAction;
+export default IActions;
