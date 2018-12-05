@@ -35,6 +35,7 @@
     "@types/koa-bodyparser": "^4.2.1",
     "acosor-common": "^0.0.1-alpha.1",
     "archappenv": "^1.0.0-rc.10",
+    "jsonwebtoken": "^8.4.0",
     "koa": "^2.6.2",
     "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0"
