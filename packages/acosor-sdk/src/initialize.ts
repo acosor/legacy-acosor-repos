@@ -1,19 +1,13 @@
-
-
-const resolveAppServeConfig = async (): Promise<IAppServeConfig> => ({
-  protocol: "http",
-  server: "localhost",
-  port: 8081,
-});
-
-const resolveAppServeURI = (config: IAppServeConfig) => `${config.protocol}://${config.server}:${config.port}`;
-
-const createRESTClient = (config: IAppServeConfig) => {
-  const uri = resolveAppServeURI(config);
-};
+const authenticate = async (appID: string, appSecret: string) => true;
 
 export const initialize = async (appID: string, appSecret: string) => {
-  const config = await resolveAppServeConfig();
-  const uri = resolveAppServeURI(config);
+  const isAuthenticated = await authenticate(appID, appSecret);
 
+  if (!isAuthenticated) {
+    return {};
+  } else {
+    return {
+      authenticated: true,
+    };
+  }
 };

@@ -1,4 +1,4 @@
-import IChannel from "./IChannel";
+import IChannel from "./common/IChannel";
 
 const ActionUtility = {
   equal: (channels: IChannel, others: IChannel) => {

@@ -1,3 +1,9 @@
-const  = require("./lib");
+const Acosor = require("./lib");
 
-const process = new ClientProcess();
+const appID = "appID";
+const appSecret = "appSecret";
+
+const session = Acosor.initialize(appID, appSecret);
+
+session.dispatch({})
+.then(res => )
