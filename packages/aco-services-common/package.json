@@ -1,7 +1,7 @@
 {
-  "name": "acosor-common",
+  "name": "aco-services-common",
   "version": "0.0.1-alpha.1",
-  "description": "acosor common library",
+  "description": "aco services common",
   "main": "./index.js",
   "typings": "./typings/index.d.ts",
   "scripts": {
@@ -29,7 +29,7 @@
   },
   "author": "Architecode Corporation",
   "license": "MIT",
-  "repository": "git+https://github.com/acosor/acosor-common",
+  "repository": "git+https://github.com/acosor/aco-services-common",
   "dependencies": {},
   "devDependencies": {
     "@types/node": "^10.12.12",
@@ -38,8 +38,8 @@
     "mock-require": "^3.0.2",
     "nyc": "^13.1.0",
     "shelljs": "^0.8.3",
-    "sinon": "^7.1.1",
+    "sinon": "^7.2.0",
     "tslint": "^5.11.0",
-    "typescript": "^3.2.1"
+    "typescript": "^3.2.2"
   }
 }
