@@ -5,6 +5,8 @@ const outDirs = [
   'payloads',
   'Actions.js',
   'Actions.js.map',
+  'ActionUtility.js',
+  'ActionUtility.js.map',
   'IActions.js',
   'IActions.js.map',
   'index.js',
