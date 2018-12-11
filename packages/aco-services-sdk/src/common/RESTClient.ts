@@ -1,9 +1,14 @@
-import { resolve } from "url";
-import config from "../config";
+import IRESTClient from "./IRESTClient";
+import * as request from "superagent";
 
-const RESTClient = {
-  resolveAPIPath: (path: string = "", options: { port?: number } = {}) =>
-    resolve(`http://localhost:${options.port || config().port}`, path),
+const RESTClient: IRESTClient = {
+  get: (url, options) => {
+    return request
+      .get(url);
+  },
+  post: (url, body, options) => {
+    return request.post(url);
+  },
 };
 
 export default RESTClient;

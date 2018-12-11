@@ -1,9 +1,9 @@
 import fetch from "node-fetch";
-import RESTClient from "./common/RESTClient";
+import resolveAPIPath from "./common/resolveAPIPath";
 import config from "./config";
 
 const checkup = async () => {
-  const url = RESTClient.resolveAPIPath(config().checkupURL);
+  const url = resolveAPIPath(config().checkupURL);
   console.log(url);
   return fetch(url).then((res) => res.json());
 };
