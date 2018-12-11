@@ -18,8 +18,9 @@ export const appRouter = (options: any = {}) => {
     next();
   });
 
-  router.post("/es/initialize", (ctx, next) => {
+  router.post("/_/initialize", (ctx, next) => {
     console.log("Event Sourcing Initialized");
+    console.log(ctx.request.body);
     ctx.body = {
       validation: true,
       data: {
