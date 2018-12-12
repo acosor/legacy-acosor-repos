@@ -1,13 +1,14 @@
-const authenticate = async (appID: string, appSecret: string) => true;
+import fetch from "node-fetch";
 
-export const initialize = async (appID: string, appSecret: string) => {
-  const isAuthenticated = await authenticate(appID, appSecret);
-
-  if (!isAuthenticated) {
-    return {};
-  } else {
-    return {
-      authenticated: true,
-    };
+export default async (user: string, password: string) => {
+  try {
+    const result = await fetch("http://localhost:3030/core/initialize", {
+      method: "POST",
+      body: JSON.stringify({ user, password }),
+      headers: { "Content-Type": "application/json" },
+    }).then((response: any) => response.json());
+    console.log(result);
+  } catch (error) {
+    console.log(error);
   }
 };
