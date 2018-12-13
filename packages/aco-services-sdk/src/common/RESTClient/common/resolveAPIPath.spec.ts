@@ -1,5 +1,5 @@
 import { expect } from "chai";
-import config from "../config";
+import config from "../../../config";
 import resolveAPIPath from "./resolveAPIPath";
 
 describe("resolveAPIPath.ts tests", () => {
