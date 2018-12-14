@@ -1,6 +1,8 @@
-import * as Router from "koa-router";
-import _ from "./_";
+import Core from "./core";
+import { IRouting } from "./irouting";
 
-export default (router: Router)=> {
-  _(router);
-};
+export default ((router) => {
+  Core(router);
+
+  return router;
+}) as IRouting;

@@ -33,6 +33,7 @@
   "dependencies": {
     "@koa/cors": "^2.2.2",
     "@types/koa-bodyparser": "^4.2.1",
+    "aco-services-core": "0.0.1-alpha.1",
     "archappenv": "^1.0.0-rc.10",
     "koa": "^2.6.2",
     "koa-bodyparser": "^4.2.1",
