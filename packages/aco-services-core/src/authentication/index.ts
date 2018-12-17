@@ -1,7 +1,7 @@
-import { authenticate } from "./authenticate";
+import Commands from "./commands";
 
 export const Authentication = {
-  authenticate,
+  Commands,
 };
 
 Object.freeze(Authentication);
