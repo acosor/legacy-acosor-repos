@@ -1,5 +1,5 @@
 import { expect } from "chai";
-import Commands from "./commands";
+import Commands from "./commanders";
 
 describe("Authentication", () => {
   describe("#Commands", () => {
@@ -7,7 +7,7 @@ describe("Authentication", () => {
       it("expect to get a command", () => {
         // arranges
         const expected = {
-          taskID: "",
+          id: "",
           module: "authentication",
           channel: {
             topic: "account",
@@ -24,7 +24,7 @@ describe("Authentication", () => {
         const command = Commands.createAccount("user", "password");
 
         // asserts
-        expected.taskID = ""; // command.commandID;
+        expected.id = command.id;
         expected.payloads.uid = command.payloads.uid;
         expect(command).to.deep.equal(expected);
       });
